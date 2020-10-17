@@ -1,0 +1,22 @@
+
+
+apply plugin: 'java'
+apply plugin: 'eclipse'
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+
+	// Sample dependency
+	compile group: 'org.jsoup', name: 'jsoup', version: '1.13.1'
+	
+	
+	// Logger dependency
+	compile group: 'org.slf4j', name: 'slf4j-api', version: '1.7.25'
+	compile group: 'org.slf4j', name:'slf4j-jdk14', version: '1.7.25'
+
+    // Use JUnit test framework
+    testImplementation 'junit:junit:4.12'
+}
